@@ -81,10 +81,16 @@ WSGI_APPLICATION = 'vecResults.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# postgres://schkudllgfhuig:a5a7ff6534bcc9851de7efacfd3b4901e155f45c1725f7a587ace398ab480cad@ec2-44-205-112-253.compute-1.amazonaws.com:5432/dfcpk3askvmr7o
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dfcpk3askvmr7o',
+        'HOST': 'ec2-44-205-112-253.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'USER': 'schkudllgfhuig',
+        'PASSWORD': 'a5a7ff6534bcc9851de7efacfd3b4901e155f45c1725f7a587ace398ab480cad'
     }
 }
 
